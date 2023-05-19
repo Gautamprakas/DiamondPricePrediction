@@ -1,8 +1,10 @@
 import logging 
 import os
-from datetime import datetime
+import time
+import os
 
-LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"#log file name current date time in format
+LOG_FILE = f"{time.strftime('%m_%d_%Y_%H_%M_%S')}.log"
+#log file name current date time in format
 logs_path=os.path.join(os.getcwd(),"logs",LOG_FILE)#create log folder in current directory name DIamondPricePrediction
 os.makedirs(logs_path,exist_ok=True)
 
